@@ -5,32 +5,96 @@
 	<title>R&S - Login</title>
 	<!-- CSS BOOTSTRAP -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="../Style/main.css">
+	<link rel="stylesheet" href="../Style/login.css">
+	<link href="https://fonts.googleapis.com/css?family=Aclonica" rel="stylesheet">
 </head>
 <body>
-	<div>
-		<h1>ROL & SOCIAL</h1>	
+	<div class="tit">
+
+		<h1 class="text-center">ROL & SOCIAL</h1>	
 	</div>
-	<div>
-		<h2>
-		Continuar Quest
+
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-5 perga ">
+			<h2 class="tit2 text-center">
+			Continuar Quest
+			</h2>
+			<p class="">-Otra vez por aqui aventurero?</p>
+			<div class="container">
+				<div class="row">
+					<form class="col-8 offset-2" >
+					<div class="group-form">
+						<label name="alias" class="text-center">
+						Alias
+						</label>
+						<input type="text" name="alias" id="" class="form-control">
+					</div>
+					<div class="group-form">
+						<label name="pas" class="text-center"> 
+						Santo y seña
+						</label>
+						<input type="password" name="pas" id="" class="form-control">
+					</div>
+					
+						<input type="button" value="A por ellos" class="btm but">
+					<p class="text-center">
+						<a href="#">
+						Recuperar santo y seña
+						</a>
+					</p>
+					</form>
+				</div>
+			</div>		
+		</div>
+
+	<div class="col-5 offset-2 perga">
+		<h2 class="tit2 text-center">
+		Nuevo aventurero
 		</h2>
-		<p>-Otra vez por aqui aventurero?</p>
-		<form>
-			<label name="alias">
+
+		<p class="">-Nuevo en el pueblo?</p>
+<div class="container">
+	<div class="row">
+		<form class="col-8 offset-2">
+
+			<div class="form-group">
+				<label name="aliasn">
 				Alias
-			</label>
-			<input type="text" name="alias" id="">
-			<label name="pas"> 
+				</label>
+				<input type="text" name="aliasn" id="" class="form-control">
+			</div>
+				
+				<label name="pasn" class="text-center"> 
 				Santo y seña
-			</label>
-			<input type="password" name="pas" id="">
-			<input type="button" value="">
-			<a href="www">
-				Recuperar pasword
-			</a>
-		</form>
+				</label name="pasn1" class="text-center">
+				<input type="password" name="pasn1" id="" class="form-control">
+			<div class="form-group">	
+				<label class="text-center" name="pasn2">
+				Repetir santo y seña
+				</label>
+				<input type="password" name="pasn2" id="" class="form-control">
+			</div>
+				
+			<div class="form-inline ">
+				<p class="text-center">
+				<a href="#">
+				Leyes del pueblo
+				</a>
+				</p>
+				<input type="checkbox" name="" value="" class="cb">
+				</div>
+
+				<input type="button" value="A por ellos" class="btm but">		
+			</form>
+			</div>
+		</div>
+		</div>
 	</div>
-	
+</div>
 
 
 
