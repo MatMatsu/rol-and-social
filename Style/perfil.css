@@ -1,0 +1,54 @@
+.barmi{
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    top: 0%    
+}
+.imper{
+    margin:10px;
+    float: left;
+    height: 11em;
+    width: 11em;
+    background-color: blue;
+    border-radius: 60%
+    
+}
+.datper{
+    
+margin-top:3.5rem;
+height: 12em;
+width: 100%;
+background-color: brown;
+
+}
+.am{
+    margin:10px;
+    height: 40em;
+    width: 10em;
+    background-color: blue;
+}
+.com{
+    margin:10px;
+    height: 40em;
+    width: 10em;
+    background-color: blue;
+}
+.po{
+    margin:10px;
+    height: 40em;
+    width: 10em;
+    background-color: blue;
+}
+.fa{
+    margin:10px;
+    height: 40em;
+    width: 10em;
+    background-color: blue;
+}
+.row{
+    justify-content: space-around;
+    width: 100%
+}
+.data{
+
+}

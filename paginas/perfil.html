@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>R&S - perfil</title>
@@ -7,43 +7,81 @@
 	<!-- CSS BOOTSTRAP -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="../Style/main.css">
-	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="../Style/perfil.css">
 	<link href="https://fonts.googleapis.com/css?family=Aclonica" rel="stylesheet">
 </head>
 <body>
-	<h1>Rol And Social</h1>
 	<!--menu de navegacion  -->
-	<nav aria-label="breadcrumb">
-			<ol class="breadcrumb">
-				<li class="breadcrumb-item "><a href="/paginas/inbox.html">mensajes</a>	</li>
-				<li class="breadcrumb-item "><a href="/paginas/comunidades.html">comunidades</a>	</li>
-				<li class="breadcrumb-item "><a href="/paginas/amigos.html">amigos</a>	</li>
-				<li class="breadcrumb-item "><a href="/paginas/favoritos.html">favoritos</a>	</li>
-				<li class="breadcrumb-item "><a href="/paginas/opciones.html">opciones</a>	</li>
-				<li class="breadcrumb-item "><a href="/paginas/ayuda.html">ayuda</a>	</li>
-				
-			</ol>
-		</nav>
-	<!--  -->
-	<div>
-<!--contenedor de los datos de perfil y foto de perfil  -->
-		<div>
-<!--foto de perfil  -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light barmi">
+		<a class="navbar-brand" href="#">perfil</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+	  
+		<div class="collapse navbar-collapse " id="navbarSupportedContent">
+		  <ul class="navbar-nav mr-auto">
+
+				<li class="nav-item">
+					<a class="nav-link" href="../index.html">home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./paginas/inbox.html">Mensajes</a>
+				</li>
+
+			<li class="nav-item">
+			  <a class="nav-link" href="./amigos.html">amigos</a>
+			</li>
+			
+			<li class="nav-item">
+				<a class="nav-link" href="./inbox.html">Link</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="./comunidades.html">comunidades</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="./favoritos.html">favoritos</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="./opciones.html">opciones</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="./ayuda.html">ayuda</a>
+			  </li>
+			  </ul>
+		  <form class="form-inline my-2 my-lg-0">
+			<input class="form-control mr-sm-2" type="text" placeholder="buscar" aria-label="Search">
+			<button class="btn my-2 my-sm-0 bt-sr" type="submit">buscar</button>
+		  </form>
 		</div>
+	  </nav>
+	<!--  -->
+	<div class="datper">
+<!--contenedor de los datos de perfil y foto de perfil  -->
+
+<div class="imper">
+<!--foto de perfil  -->
+<img src="/img/pepe.png" alt="" >
+		</div>
+		<div class="data">
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus soluta at saepe ullam ea magni. Ut, corporis dolorum? Voluptatibus repellendus magnam placeat numquam dolore eum assumenda? Maiores consequuntur nulla asperiores.</p>
+				</div>
+		
 	</div>
-	<div>
+	<div class="row ">
+	<div class="am col-2">
 <!--amigos  -->
 	</div>	
-	<div>
+
+	<div class="fa col-2">
 <!-- favoritos -->
 	</div>
-	<div>
+	<div class="po col-2">
 <!-- post -->
 	</div>
-	<div>
+	<div class="com col-2">
 <!-- comunidades -->
 	</div>
-
+	</div>
 
 
 	<!-- SCRIPT JQUERY BOOTSTRAP -->
