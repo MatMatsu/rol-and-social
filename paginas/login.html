@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>R&S - Login</title>
 	<!-- CSS BOOTSTRAP -->
@@ -10,93 +11,76 @@
 	<link href="https://fonts.googleapis.com/css?family=Aclonica" rel="stylesheet">
 </head>
 <body>
-	<div class="tit">
-
-		<h1 class="text-center">ROL & SOCIAL</h1>	
-	</div>
-
-
-
-<div class="container">
-	<div class="row">
-		<div class="col-5 perga ">
-			<h2 class="tit2 text-center">
-			Continuar Quest
-			</h2>
-			<p class="">-Otra vez por aqui aventurero?</p>
-			<div class="container">
-				<div class="row">
-					<form class="col-8 offset-2" >
-					<div class="group-form">
-						<label name="alias" class="text-center">
-						Alias
-						</label>
-						<input type="text" name="alias" id="" class="form-control">
+	<header>
+		<div class="tit">
+			<h1 class="text-center">🎲 ROL & SOCIAL 🎲</h1>	
+			<p class="text-center">Lugar de encuentro para roleros</p>
+		</div>
+	</header>
+	<main>
+		<div class="container-fluid">
+			<div class="row espaciado">
+				<!-- LOG IN -->
+				<div class="col-4 perga ">
+					<img src="../img/pergamino.png" alt="pergamino de fondo">
+					<h2 class="tit2 text-center">Continuar Quest</h2>
+					<p class="text-center">-Otra vez por aqui aventurero?</p>
+					<div class="container">
+						<div class="row">
+							<form class="col-8 offset-2" >
+								<div class="group-form">
+									<label name="alias" class="text-center">Alias</label>
+									<input type="text" name="alias" id="" class="form-control">
+								</div>
+								<div class="group-form">
+									<label name="pas" class="text-center">Santo y seña</label>
+									<input type="password" name="pas" id="" class="form-control">
+								</div>
+								<p class="text-center"><a href="#">Recuperar santo y seña</a></p>
+								<input type="button" value="A por ellos" class="btm but">
+							</form>
+						</div>
 					</div>
-					<div class="group-form">
-						<label name="pas" class="text-center"> 
-						Santo y seña
-						</label>
-						<input type="password" name="pas" id="" class="form-control">
+				</div>
+				<!-- SIGN IN -->
+				<div class="col-4 perga">
+					<img src="../img/pergamino.png" alt="pergamino de fondo">
+					<h2 class="tit2 text-center">Nuevo aventurero</h2>
+					<p class="text-center">- Nuevo en el pueblo?</p>
+					<div class="container">
+						<div class="row">
+							<form class="col-8 offset-2">
+								<div class="form-group">
+									<label name="aliasn">Alias</label>
+									<input type="text" name="aliasn" id="" class="form-control">
+								</div>
+								<div class="form-group">
+									<label name="pasn" class="text-center">Santo y seña</label name="pasn1" class="text-center">
+									<input type="password" name="pasn1" id="" class="form-control">
+								</div>
+								<div class="form-group">	
+									<label class="text-center" name="pasn2">Repetir santo y seña</label>
+									<input type="password" name="pasn2" id="" class="form-control">
+								</div>
+								<div class="form-inline">
+									<!-- <p class="text-center"><a href="#">Leiste las leyes del pueblo?</a></p> -->
+									<!-- <input type="checkbox" name="" value="" class="cb"> -->
+									<label><input type="checkbox" name="" value="" class="cb"><a href="#">Has leido las leyes del pueblo?</a></label>
+								</div>
+								<input type="button" value="A por ellos" class="btm but">		
+							</form>
+						</div>
 					</div>
-					
-						<input type="button" value="A por ellos" class="btm but">
-					<p class="text-center">
-						<a href="#">
-						Recuperar santo y seña
-						</a>
-					</p>
-					</form>
 				</div>
-			</div>		
-		</div>
-
-	<div class="col-5 offset-2 perga">
-		<h2 class="tit2 text-center">
-		Nuevo aventurero
-		</h2>
-
-		<p class="">-Nuevo en el pueblo?</p>
-<div class="container">
-	<div class="row">
-		<form class="col-8 offset-2">
-
-			<div class="form-group">
-				<label name="aliasn">
-				Alias
-				</label>
-				<input type="text" name="aliasn" id="" class="form-control">
-			</div>
-				
-				<label name="pasn" class="text-center"> 
-				Santo y seña
-				</label name="pasn1" class="text-center">
-				<input type="password" name="pasn1" id="" class="form-control">
-			<div class="form-group">	
-				<label class="text-center" name="pasn2">
-				Repetir santo y seña
-				</label>
-				<input type="password" name="pasn2" id="" class="form-control">
-			</div>
-				
-			<div class="form-inline ">
-				<p class="text-center">
-				<a href="#">
-				Leyes del pueblo
-				</a>
-				</p>
-				<input type="checkbox" name="" value="" class="cb">
-				</div>
-
-				<input type="button" value="A por ellos" class="btm but">		
-			</form>
 			</div>
 		</div>
+	</main>
+
+	<footer class="navbar fixed-bottom">
+		<div>
+			<p class="text-center">©️ Rol & Social 2019 | Made by <a href="https://github.com/clawsteel">ClawSteel</a> and <a href="https://github.com/MatMatsu">MatMatsu</a></p>
 		</div>
-	</div>
-</div>
-
-
+	</footer>
 
 	<!-- SCRIPT JQUERY BOOTSTRAP -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
