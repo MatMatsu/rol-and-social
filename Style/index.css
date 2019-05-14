@@ -1,0 +1,99 @@
+.navbar ul {
+	list-style: none;
+}
+
+.navbar ul li {
+	float: left;
+	margin-right: 2rem;
+}
+
+/*		MAIN (CONTAINER-FLUID)		*/
+main {
+	margin-top: 2rem;
+}
+
+/*		MAIN > .ROW		*/
+.row {
+	justify-content: space-around;
+}
+
+/*		MAIN > .ROW > .LEFT > .FAVS/.FRIENDS		*/
+.favs, .friends {
+	background-color: rgba(0,0,0,0.5);
+	border: 1px solid #7d7d7d;
+	border-radius: 25%;
+	margin: 3rem auto;
+	margin-top: 1rem;
+}
+
+/*		MAIN > .ROW > .LEFT > .FAVS/.FRIENDS > H2		*/
+.favs>h2, .friends>h2 {
+	text-align: center;
+	color: #56070C;
+	font-weight: bold;
+	margin: 1rem auto;
+}
+
+/*		MAIN > .ROW > .LEFT > .FAVS/.FRIENDS > DIV		*/
+.favs>div, .friends>div {
+	background-color: white;
+	border-radius: 25%;
+	margin: 1rem;
+}
+
+/*		MAIN > .ROW > .LEFT > .FAVS/.FRIENDS > DIV > UL		*/
+.favs>div>ul, .friends>div>ul {
+	list-style: none;
+	font-weight: bold;
+	padding-bottom: 0.5rem;
+	padding-top: 0.5rem;
+}
+
+/*		MAIN > .ROW > .LEFT > .FAVS/.FRIENDS > DIV > UL	> LI	*/
+.favs>div>ul li, .friends>div>ul li {
+	margin: 1rem auto;
+}
+
+/*		MAIN > .ROW > .CENTER > .POST		*/
+.post {
+	background-color: white;
+	border-radius: 50px;
+	margin: 1rem;
+}
+
+/*		MAIN > .ROW > .CENTER > .POST > .POST-MSG		*/
+.post-msg {
+	margin: 3rem;
+	margin-top: 1rem;
+}
+
+/*		MAIN > .ROW > .CENTER > .POST > .POST-MSG > FORM		*/
+.post-msg>form {
+	padding: 1rem 0;
+}
+
+
+/*		MAIN > .ROW > .CENTER > .POST > .POST-MSG > FORM > .NEW-POST		*/
+.new-post {
+	border: 1px solid black;
+	border-radius: 15px;
+}
+
+/*		MAIN > .ROW > .CENTER > .POST > .POST.MSG > H2		*/
+.post-msg>h2 {
+	color: #56070C;
+	font-weight: bold;
+}
+
+/*		MAIN > .ROW > .RIGHT > .ADS		*/
+.ads {
+	background-color: white;
+	border-radius: 50px;
+	margin: 1rem;
+}
+
+/*		MAIN > .ROW > .RIGHT > .ADS > .BANNER		*/
+.banner {
+	margin: 1rem;
+	text-align: center;
+}
