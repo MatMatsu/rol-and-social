@@ -10,17 +10,43 @@
 </head>
 <body>
 	<!-- <h1>INDEX</h1> -->
-	<!-- nav de muestra -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<ul>
-			<li><a href="#">AAAAAAAA</a></li>
-			<li><a href="#">BBBBBBBB</a></li>
-			<li><a href="#">CCCCCCCC</a></li>
-			<li><a href="#">DDDDDDDD</a></li>
-			<li><a href="#">EEEEEEEE</a></li>
-		</ul>
+	<!--menu de navegacion  -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light barmi">
+		<a class="navbar-brand" href="#">Perfil</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse " id="navbarSupportedContent">
+		  <ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="../index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./paginas/inbox.html">Mensajes</a>
+				</li>
+				<li class="nav-item">
+			  	<a class="nav-link" href="./paginas/amigos.html">Amigos</a>
+				</li>
+			  <li class="nav-item">
+					<a class="nav-link" href="./paginas/comunidades.html">Comunidades</a>
+			  </li>
+			  <li class="nav-item">
+					<a class="nav-link" href="./paginas/favoritos.html">Favoritos</a>
+			  </li>
+			  <li class="nav-item">
+					<a class="nav-link" href="./paginas/opciones.html">Opciones</a>
+			  </li>
+			  <li class="nav-item">
+					<a class="nav-link" href="./paginas/ayuda.html">Ayuda</a>
+			  </li>
+			</ul>
+		  <form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="text" placeholder="Buscar..." aria-label="Search">
+				<button class="btn my-2 my-sm-0 bt-sr" type="submit">Buscar</button>
+		  </form>
+		</div>
 	</nav>
-	<!-- nav de muestra -->
+	<!--  -->
 
 	<main class="container-fluid">
 		<div class="row">
@@ -51,17 +77,23 @@
 				</div>
 			</div>
 			<div class="col-6 center">
+				<h1 class="text-center">Tablero de Noticias</h1>
 				<div class="post">
+					<img src="./img/post-board.png" class="post-img">
 					<div class="post-msg">
 						<form>
-							<label>Nuevo posteo en tablero de mensajes</label>
+							<label name="titulo" class="titulo-nuevo-posteo">Nuevo posteo en tablero de mensajes</label>
 							<textarea rows="4" class="col-12 new-post" placeholder="Deja tu request o tu info aquí"></textarea>
+							<div class="text-center">
+								<input type="button" name="postIt" id="postIt" class="btn btn-dark" value="Pegar cartel!">
+							</div>
 						</form>
 					</div>
 				</div>
 				<div class="post">
+					<img src="./img/post-board.png" class="post-img">
 					<div class="post-msg">
-						<h2>Post</h2>
+						<h2><a href="#">Name</a></h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -71,8 +103,9 @@
 					</div>
 				</div>
 				<div class="post">
+					<img src="./img/post-board.png" class="post-img">
 					<div class="post-msg">
-						<h2>Post</h2>
+						<h2><a href="#">Name</a></h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -82,8 +115,9 @@
 					</div>
 				</div>
 				<div class="post">
+					<img src="./img/post-board.png" class="post-img">
 					<div class="post-msg">
-						<h2>Post</h2>
+						<h2><a href="#">Name</a></h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
