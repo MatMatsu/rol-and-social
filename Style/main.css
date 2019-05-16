@@ -1,19 +1,49 @@
+@media only screen and (max-width: 991px) {
+    main {
+        margin-top: calc(8vh + 3vw);
+    }
+    .menu-mobile {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    main {
+        margin-top: calc(3vh + 3vw);
+    }
+    .menu-mobile {
+        display: none;
+    }
+}
+
 body{
     background-image: url(../img/bg_h1.jpg);
     background-attachment: fixed;
     font-family: 'Aclonica', sans-serif;
 }
+
+nav>div>ul>li {
+    border-left: 1px solid #999;
+}
+
+nav>div>ul>li:first-child {
+    border-left: none;
+}
+
+/*      NAV > UL > LI > FORM > BUTTON     */
 .bt-sr{
     border-color: black;
     background-color: gray;
     color:black;
 }
+
 .bt-sr:hover{
     border-color: black;
     background-color: black;
     color:grey;
 
 }
+
 .bt-sr:active{
     border-color:lightblue
     background-color:blue;

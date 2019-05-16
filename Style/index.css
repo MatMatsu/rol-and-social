@@ -1,6 +1,7 @@
-/*		MAIN (CONTAINER-FLUID)		*/
-main {
-	margin-top: 2rem;
+@media only screen and (max-width: 991px) {
+  .left, .right {
+  	display: none;
+  }
 }
 
 /*		MAIN > .ROW		*/
@@ -13,8 +14,9 @@ main {
 	background-color: rgba(0,0,0,0.5);
 	border: 1px solid #7d7d7d;
 	border-radius: 25%;
-	margin: 3rem auto;
-	margin-top: 1rem;
+	margin: calc(1vh + 1vw) auto calc(3vh + 3vw);
+	position: fixed;
+	width: calc(100%/12*2);
 }
 
 /*		MAIN > .ROW > .LEFT > .FAVS/.FRIENDS > H2		*/
@@ -22,27 +24,27 @@ main {
 	text-align: center;
 	color: #56070C;
 	font-weight: bold;
-	margin: 1rem auto;
+	margin: calc(1vh + 1vw) auto;
 }
 
 /*		MAIN > .ROW > .LEFT > .FAVS/.FRIENDS > DIV		*/
 .favs>div, .friends>div {
 	background-color: white;
 	border-radius: 25%;
-	margin: 1rem;
+	margin: calc(1vh + 1vw);
 }
 
 /*		MAIN > .ROW > .LEFT > .FAVS/.FRIENDS > DIV > UL		*/
 .favs>div>ul, .friends>div>ul {
 	list-style: none;
 	font-weight: bold;
-	padding-bottom: 0.5rem;
-	padding-top: 0.5rem;
+	padding-bottom: calc(0.5vh + 0.5vw);
+	padding-top: calc(0.5vh + 0.5vw);
 }
 
 /*		MAIN > .ROW > .LEFT > .FAVS/.FRIENDS > DIV > UL	> LI	*/
 .favs>div>ul li, .friends>div>ul li {
-	margin: 1rem auto;
+	margin: calc(1vh + 1vw) auto;
 }
 
 /*		MAIN > .ROW > .CENTER		*/
@@ -55,7 +57,7 @@ h1 {
 	background-color: #f9ead9;
 	font-weight: bold;
 	color: #56070C;
-	margin-top: 1rem;
+	margin-top: calc(1vh + 1vw);
 }
 
 /*		MAIN > .ROW > .CENTER > .POST		*/
@@ -65,10 +67,10 @@ h1 {
 	/*background-image: url(../img/post-board.png);
 	background-repeat: no-repeat;
 	background-size: contain;*/
-	margin: 1rem;
+	margin: calc(1vh + 1vw);
 	position: relative;
 	z-index: 0;
-	padding: 0.5rem 0;
+	padding: calc(0.5vh + 0.5vw) 0;
 }
 
 /*		MAIN > .ROW > .CENTER > .POST > .POST-IMG		*/
@@ -81,15 +83,15 @@ h1 {
 
 /*		MAIN > .ROW > .CENTER > .POST > .POST-MSG		*/
 .post-msg {
-	margin: 1rem 3rem 2rem;
-	padding-top: 1rem;
+	margin: calc(1vh + 1vw) calc(3vh + 3vw) calc(2vh + 2vw);
+	padding-top: calc(1vh + 1vw);
 	position: relative;
 	z-index: 2;
 }
 
 /*		MAIN > .ROW > .CENTER > .POST > .POST-MSG > FORM		*/
 .post-msg>form {
-	padding: 1rem 0;
+	padding: calc(1vh + 1vw) 0;
 }
 
 /*		MAIN > .ROW > .CENTER > .POST > .POST-MSG > FORM > LABEL		*/
@@ -100,12 +102,12 @@ h1 {
 
 /*		MAIN > .ROW > .CENTER > .POST > .POST-MSG > FORM > TEXTAREA		*/
 .post-msg>form>textarea {
-	margin-bottom: 1rem;
+	margin-bottom: calc(1vh + 1vw);
 }
 
 /*		MAIN > .ROW > .CENTER > .POST > .POST-MSG > FORM > #POSTIT		*/
 #postIt {
-	margin-bottom: -1rem;
+	margin-bottom: calc(-1vh - 1vw);
 }
 
 /*		MAIN > .ROW > .CENTER > .POST > .POST-MSG > FORM > .NEW-POST		*/
@@ -130,11 +132,11 @@ h2>a {
 .ads {
 	background-color: white;
 	border-radius: 50px;
-	margin: 1rem;
+	margin: calc(1vh + 1vw);
 }
 
 /*		MAIN > .ROW > .RIGHT > .ADS > .BANNER		*/
 .banner {
-	margin: 1rem;
+	margin: calc(1vh + 1vw);
 	text-align: center;
 }
