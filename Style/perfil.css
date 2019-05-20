@@ -1,5 +1,6 @@
 .imper{
     margin:10px;
+    margin-left: 7%;
     float: left;
     height: 11em;
     width: 11em;
@@ -12,14 +13,20 @@
 margin-top:3.5rem;
 height: 12em;
 width: 100%;
-background-color: brown;
+}
+.fondito{
 
+height:100%;
+width: 100%;
+    background-repeat: no-repeat;
+background-image: url(../img/post-board.png);
+background-size: cover;
 }
 .am{
     margin:10px;
     height: 40em;
     width: 10em;
-    background-color: blue;
+    background-color: green;
 }
 .com{
     margin:10px;
@@ -31,18 +38,19 @@ background-color: brown;
     margin:10px;
     height: 40em;
     width: 10em;
-    background-color: blue;
+    background-color: yellow;
 }
 .fa{
     margin:10px;
     height: 40em;
     width: 10em;
-    background-color: blue;
+    background-color: red;
 }
 .row{
     justify-content: space-around;
     width: 100%
 }
-.data{
-
+.datperda{
+    position: relative;
+    top: 3.5rem
 }
