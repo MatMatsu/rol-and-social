@@ -14,7 +14,7 @@
     
 }
 .datper{
-    
+background-image: url(./img/post-boar.png);    
 margin-top:3.5rem;
 height: 12em;
 width: 100%;
@@ -50,5 +50,6 @@ background-color: brown;
     width: 100%
 }
 .data{
+    
 
 }
