@@ -17,7 +17,7 @@
 }
 
 body{
-    background-image: url(../img/bg_h1.jpg);
+    background-image: url(../img/bg_h3.jpg);
     background-attachment: fixed;
     font-family: 'Aclonica', sans-serif;
 }
@@ -26,9 +26,9 @@ nav>div>ul>li {
     border-left: 1px solid #999;
 }
 
-nav>div>ul>li:first-child {
+/*nav>div>ul>li:first-child {
     border-left: none;
-}
+}*/
 
 /*      NAV > UL > LI > FORM > BUTTON     */
 .bt-sr{
