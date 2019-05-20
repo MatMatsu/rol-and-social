@@ -5,6 +5,9 @@
     .menu-mobile {
         display: block;
     }
+    .left, .right {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -22,15 +25,12 @@ body{
     font-family: 'Aclonica', sans-serif;
 }
 
+/*      NAV > DIV > UL > LI        */
 nav>div>ul>li {
     border-left: 1px solid #999;
 }
 
-/*nav>div>ul>li:first-child {
-    border-left: none;
-}*/
-
-/*      NAV > UL > LI > FORM > BUTTON     */
+/*      NAV > UL > LI > FORM > .BT-SR    */
 .bt-sr{
     border-color: black;
     background-color: gray;
@@ -48,4 +48,139 @@ nav>div>ul>li {
     border-color:lightblue
     background-color:blue;
     color:black;
+}
+
+/*      MAIN > .ROW     */
+.row {
+    justify-content: space-around;
+}
+
+/*      MAIN > .ROW > .LEFT > .FAVS/.FRIENDS        */
+.favs, .friends {
+    background-color: rgba(255,255,255,0.5);
+    border: 1px solid #7d7d7d;
+    border-radius: 25px;
+    margin: calc(1vh + 1vw) auto calc(3vh + 3vw);
+    position: fixed;
+    width: calc(100%/12*2);
+}
+
+.col-2 {
+    padding: 0;
+}
+
+/*      MAIN > .ROW > .LEFT > .FAVS/.FRIENDS > H2       */
+.favs>h2, .friends>h2 {
+    text-align: center;
+    color: #56070C;
+    font-weight: bold;
+    margin: calc(1vh + 1vw) auto;
+}
+
+/*      MAIN > .ROW > .LEFT > .FAVS/.FRIENDS > DIV      */
+.favs>div, .friends>div {
+    background-color: white;
+    border-radius: 25px;
+    margin: calc(1vh + 1vw);
+}
+
+/*      MAIN > .ROW > .LEFT > .FAVS/.FRIENDS > DIV > UL     */
+.favs>div>ul, .friends>div>ul {
+    list-style: none;
+    font-weight: bold;
+    padding: calc(0.5vh + 0.5vw) 5%;
+}
+
+/*      MAIN > .ROW > .LEFT > .FAVS/.FRIENDS > DIV > UL > LI    */
+.favs>div>ul li, .friends>div>ul li {
+    margin: calc(1vh + 1vw) auto;
+}
+
+/*      MAIN > .ROW > .CENTER       */
+.center {
+    background-image: url(../img/background-board.png);
+}
+
+/*      MAIN > .ROW > .CENTER > H1 / .NUEVOSPOST        */
+h1, .nuevosPost {
+    background-color: #f9ead9;
+    box-shadow: 5px 5px 10px 10px #000;
+    font-weight: bold;
+    color: #56070C;
+    margin-top: calc(1vh + 1vw);
+}
+
+/*      MAIN > .ROW > .CENTER > .NUEVOSPOST     */
+.nuevosPost {
+    margin-top: calc(2vh + 2vw);
+}
+
+/*      MAIN > .ROW > .CENTER > .POST       */
+.post {
+    /*background-color: white;
+    border-radius: 50px;*/
+    /*background-image: url(../img/post-board.png);
+    background-repeat: no-repeat;
+    background-size: contain;*/
+    margin: calc(1vh + 1vw);
+    position: relative;
+    z-index: 0;
+    padding: calc(0.5vh + 0.5vw) 0;
+}
+
+/*      MAIN > .ROW > .CENTER > .POST > .POST-IMG       */
+.post-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    box-shadow: 15px 15px 100px -10px inset;
+    border-radius: 20px;
+}
+
+/*      MAIN > .ROW > .CENTER > .POST > .POST-MSG       */
+.post-msg {
+    margin: calc(1vh + 1vw) calc(3vh + 3vw) calc(2vh + 2vw);
+    padding-top: calc(1vh + 1vw);
+    position: relative;
+    z-index: 2;
+}
+
+/*      MAIN > .ROW > .CENTER > .POST > .POST-MSG > FORM        */
+.post-msg>form {
+    padding: calc(1vh + 1vw) 0;
+}
+
+/*      MAIN > .ROW > .CENTER > .POST > .POST-MSG > FORM > LABEL        */
+.titulo-nuevo-posteo {
+    font-weight: bold;
+    font-size: calc(1vw + 1vh);
+}
+
+/*      MAIN > .ROW > .CENTER > .POST > .POST-MSG > FORM > TEXTAREA     */
+.post-msg>form>textarea {
+    margin-bottom: calc(1vh + 1vw);
+}
+
+/*      MAIN > .ROW > .CENTER > .POST > .POST-MSG > FORM > #POSTIT      */
+#postIt {
+    margin-bottom: calc(-1vh - 1vw);
+}
+
+/*      MAIN > .ROW > .CENTER > .POST > .POST-MSG > FORM > .NEW-POST        */
+.new-post {
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+/*      MAIN > .ROW > .CENTER > .POST > .POST.MSG > H2      */
+.post-msg>h2 {
+    color: #56070C;
+    font-weight: bold;
+}
+
+/*      MAIN > .ROW > .CENTER > .POST > .POST.MSG > H2 > A      */
+h2>a {
+    color: #56070C;
+    text-decoration: none;
 }

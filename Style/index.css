@@ -19,6 +19,10 @@
 	width: calc(100%/12*2);
 }
 
+.col-2 {
+	padding: 0;
+}
+
 /*		MAIN > .ROW > .LEFT > .FAVS/.FRIENDS > H2		*/
 .favs>h2, .friends>h2 {
 	text-align: center;
@@ -38,8 +42,7 @@
 .favs>div>ul, .friends>div>ul {
 	list-style: none;
 	font-weight: bold;
-	padding-bottom: calc(0.5vh + 0.5vw);
-	padding-top: calc(0.5vh + 0.5vw);
+	padding: calc(0.5vh + 0.5vw) 5%;
 }
 
 /*		MAIN > .ROW > .LEFT > .FAVS/.FRIENDS > DIV > UL	> LI	*/
@@ -52,13 +55,18 @@
 	background-image: url(../img/background-board.png);
 }
 
-/*		MAIN > .ROW > .CENTER > H1		*/
-h1 {
+/*		MAIN > .ROW > .CENTER > H1 / .NUEVOSPOST		*/
+h1, .nuevosPost {
 	background-color: #f9ead9;
 	box-shadow: 5px 5px 10px 10px #000;
 	font-weight: bold;
 	color: #56070C;
 	margin-top: calc(1vh + 1vw);
+}
+
+/*		MAIN > .ROW > .CENTER > .NUEVOSPOST		*/
+.nuevosPost {
+	margin-top: calc(2vh + 2vw);
 }
 
 /*		MAIN > .ROW > .CENTER > .POST		*/
@@ -129,17 +137,4 @@ h1 {
 h2>a {
 	color: #56070C;
 	text-decoration: none;
-}
-
-/*		MAIN > .ROW > .RIGHT > .ADS		*/
-.ads {
-	background-color: white;
-	border-radius: 50px;
-	margin: calc(1vh + 1vw);
-}
-
-/*		MAIN > .ROW > .RIGHT > .ADS > .BANNER		*/
-.banner {
-	margin: calc(1vh + 1vw);
-	text-align: center;
 }

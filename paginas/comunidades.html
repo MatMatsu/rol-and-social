@@ -1,15 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>R&S - Home</title>
 	<!-- CSS BOOTSTRAP -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../Style/main.css">
 </head>
 <body>
-	<h1>HOME</h1>
+	<!--menu de navegacion  -->
+	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light barmi">
+		<a class="navbar-brand active" href="#">Home</a>
+		
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse " id="navbarSupportedContent">
+		  <ul class="navbar-nav mr-auto">
+		  	<li class="nav-item">
+		  		<a class="nav-link" href="./paginas/perfil.html">🗣️ Perfil</a>
+		  	</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./paginas/inbox.html">✉️ Mensajes</a>
+				</li>
+				<li class="nav-item menu-mobile">
+			  	<a class="nav-link" href="./paginas/amigos.html">🤝 Amigos</a>
+				</li>
+			  <li class="nav-item">
+					<a class="nav-link" href="./paginas/comunidades.html">🏰 Comunidades</a>
+			  </li>
+			  <li class="nav-item menu-mobile">
+					<a class="nav-link" href="./paginas/favoritos.html">🔖 Favoritos</a>
+			  </li>
+			</ul>
+	  	<form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="text" placeholder="Buscar..." aria-label="Search">
+				<button class="btn my-2 my-sm-0 mr-sm-2 bt-sr" type="submit">Buscar 🔍</button>
+	  	</form>
+			<ul class="navbar-nav my-2 my-sm-0">
+				<li class="nav-item mr-2">
+					<a class="nav-link" href="./paginas/opciones.html">⚙️ Opciones</a>
+				</li>
+				<li class="nav-item mr-2">
+					<a class="nav-link" href="./paginas/ayuda.html">❓ Ayuda</a>
+				</li>
+				<li class="nav-item mr-2">
+					<a class="nav-link" href="./paginas/logout.html">🚪 Logout</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!--  -->
 
-
+	<main class="container-fluid">
+		<div class="row">
+			<div class="col-2 left">
+				<div class="favs">
+					<h2><a href="./paginas/favoritos.html">🔖 Favoritos</a></h2>
+					<div>
+						<ul>
+							<li><a href="#">🦄 PAPA</a></li>
+							<li><a href="#">🦄 PEPE</a></li>
+							<li><a href="#">🦄 PIPI</a></li>
+							<li><a href="#">🦄 POPO</a></li>
+							<li><a href="#">🦄 PUPU</a></li>
+							<li><a href="./paginas/favoritos.html">🦄 VER MAS...</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-10 offset-lg-0 col-lg-6 center">
+				<h1 class="text-center">COMUNIDADES</h1>
+				<div class="post">
+					<img src="../img/post-board.png" class="post-img">
+					<div class="post-msg">
+						<form>
+							<label name="titulo" class="titulo-nuevo-posteo">Crear nueva comunidad: <input type="text" name="titleComunidad"></label>
+							<textarea rows="4" class="col-12 new-post" placeholder="Describe de que irá tu comunidad colega..."></textarea>
+							<div class="text-center">
+								<input type="button" name="postIt" id="postIt" class="btn btn-dark" value="Crear Comunidad!">
+							</div>
+						</form>
+					</div>
+				</div>
+				<h2 class="text-center nuevosPost">COMUNIDADES CREADAS RECIENTEMENTE</h2>
+				<div class="post">
+					<img src="../img/post-board.png" class="post-img">
+					<div class="post-msg">
+						<h2><a href="#">Nombre Comunidad</a></h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+				</div>
+				<div class="post">
+					<img src="../img/post-board.png" class="post-img">
+					<div class="post-msg">
+						<h2><a href="#">Nombre Comunidad</a></h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+				</div>
+				<div class="post">
+					<img src="../img/post-board.png" class="post-img">
+					<div class="post-msg">
+						<h2><a href="#">Nombre Comunidad</a></h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-2 right">
+				<div class="friends">
+					<h2><a href="./paginas/amigos.html">🤝 Amigos</a></h2>
+					<div>
+						<ul>
+							<li><a href="#">🐼 TATA</a></li>
+							<li><a href="#">🐼 TETE</a></li>
+							<li><a href="#">🐼 TITI</a></li>
+							<li><a href="#">🐼 TOTO</a></li>
+							<li><a href="#">🐼 TUTU</a></li>
+							<li><a href="./paginas/amigos.html">🐼 VER MAS...</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</main>
 
 	<!-- SCRIPT JQUERY BOOTSTRAP -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
