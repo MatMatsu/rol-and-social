@@ -1,0 +1,83 @@
+.infoManual {
+    margin: calc(1vh + 1vw);
+    position: relative;
+    z-index: 0;
+    padding: calc(0.5vh + 0.5vw) 0;
+}
+
+.fondoManual {
+	position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.tituloManual+.seccionManual {
+	border: none;
+}
+
+.tituloManual {
+	position: relative;
+	z-index: 3;
+	margin: calc(10vw + 10vh) auto calc(1vw + 1vh);
+}
+
+.tituloManual>h2 {
+	color: #56070C;
+  font-weight: bold;
+  text-shadow: 7px 7px 7px black;
+  font-size: calc(3vw + 3vh);
+}
+
+.seccionManual {
+  margin: calc(1vh + 1vw) calc(3vh + 3vw) calc(2vh + 2vw);
+  padding-top: calc(1vh + 1vw);
+  position: relative;
+  z-index: 2;
+  border-top: 1px dashed black;
+}
+
+.lastManual {
+	margin-bottom: calc(15vw + 15vh);
+}
+
+.subseccionManual {
+	margin-left: calc(2vw + 2vh);
+}
+
+.indice {
+	background-color: rgba(255,255,255,0.7);
+	padding: calc(1vw + 1vh);
+	margin: calc(2vw + 2vh) 0;
+}
+
+.indice h2 {
+	font-weight: bold;
+	text-align: center;
+}
+
+.indice ul li {
+	list-style-image: url(../img/icono-lista.png);
+	padding-top: 10px;
+}
+
+.indice ul li a {
+	color: black;
+}
+
+.indice ul li a:hover {
+	font-weight: bold;
+}
+
+#subir {
+	width: calc(3vw + 3vh);
+	height: calc(3vw + 3vh);
+}
+
+.mostrar {
+	display: visible;
+}
+
+.ocultar {
+	display: none;
+}
