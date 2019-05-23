@@ -135,7 +135,7 @@ h1, .nuevosPost {
 
 /*      MAIN > .ROW > .CENTER > .POST > .POST-MSG       */
 .post-msg {
-    margin: calc(1vh + 1vw) calc(3vh + 3vw) calc(2vh + 2vw);
+    margin: calc(1vh + 1vw) calc(3vh + 3vw) calc(0.5vh + 0.5vw);
     padding-top: calc(1vh + 1vw);
     position: relative;
     z-index: 2;
