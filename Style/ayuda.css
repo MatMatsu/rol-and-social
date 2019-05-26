@@ -1,3 +1,4 @@
+/*		MAIN > DIV > DIV(.INFOMANUAL) 		*/
 .infoManual {
     margin: calc(1vh + 1vw);
     position: relative;
@@ -5,6 +6,7 @@
     padding: calc(0.5vh + 0.5vw) 0;
 }
 
+/*		MAIN > DIV > DIV(.INFOMANUAL) > IMG(.FONDOMANUAL) 		*/
 .fondoManual {
 	position: absolute;
   width: 100%;
@@ -12,16 +14,19 @@
   z-index: 1;
 }
 
+/*		MAIN > DIV > DIV(.INFOMANUAL) > DIV(.TITULOMANUAL)/DIV(.SECCIONMANUAL) 		*/
 .tituloManual+.seccionManual {
 	border: none;
 }
 
+/*		MAIN > DIV > DIV(.INFOMANUAL) > DIV(.TITULOMANUAL) 		*/
 .tituloManual {
 	position: relative;
 	z-index: 3;
 	margin: calc(10vw + 10vh) auto calc(1vw + 1vh);
 }
 
+/*		MAIN > DIV > DIV(.INFOMANUAL) > DIV(.TITULOMANUAL) > H2 		*/
 .tituloManual>h2 {
 	color: #56070C;
   font-weight: bold;
@@ -29,6 +34,7 @@
   font-size: calc(3vw + 3vh);
 }
 
+/*		MAIN > DIV > DIV(.INFOMANUAL) > DIV(.SECCIONMANUAL) 		*/
 .seccionManual {
   margin: calc(1vh + 1vw) calc(3vh + 3vw) calc(2vh + 2vw);
   padding-top: calc(1vh + 1vw);
@@ -37,41 +43,41 @@
   border-top: 1px dashed black;
 }
 
-:target::before {
-  content: "";
-  display: block;
-  height: 60px; /* fixed header height*/
-  margin: -60px 0 0; /* negative fixed header height */
-}
-
+/*		MAIN > DIV > DIV(.INFOMANUAL) > DIV(.SECCIONMANUAL .LASTMANUAL) 		*/
 .lastManual {
 	margin-bottom: calc(15vw + 15vh);
 }
 
+/*		MAIN > DIV > DIV(.INFOMANUAL) > DIV(.SECCIONMANUAL) > DIV(.SUBSECCIONMANUAL) 		*/
 .subseccionManual {
 	margin-left: calc(2vw + 2vh);
 }
 
+/*		MAIN > DIV > DIV(.INFOMANUAL) > DIV > ASIDE(.INDICE) 		*/
 .indice {
 	background-color: rgba(255,255,255,0.7);
 	padding: calc(1vw + 1vh);
 	margin: calc(2vw + 2vh) 0;
 }
 
+/*		MAIN > DIV > DIV(.INFOMANUAL) > DIV > ASIDE(.INDICE) > H2 		*/
 .indice h2 {
 	font-weight: bold;
 	text-align: center;
 }
 
+/*		MAIN > DIV > DIV(.INFOMANUAL) > DIV > ASIDE(.INDICE) > UL 		*/
 .indice ul {
 	padding-left: calc(1vw + 1vh);
 }
 
+/*		MAIN > DIV > DIV(.INFOMANUAL) > DIV > ASIDE(.INDICE) > UL > LI 		*/
 .indice ul li {
 	list-style-image: url(../img/icono-lista.png);
 	padding-top: 10px;
 }
 
+/*		MAIN > DIV > DIV(.INFOMANUAL) > DIV > ASIDE(.INDICE) > UL > LI > A 		*/
 .indice ul li a {
 	color: black;
 }
@@ -80,6 +86,7 @@
 	font-weight: bold;
 }
 
+/*		MAIN > DIV > BUTTON(#SUBIR) 		*/
 #subir {
 	width: calc(3vw + 3vh);
 	height: calc(3vw + 3vh);
@@ -87,10 +94,19 @@
 	padding: 0;
 }
 
+/*		MAIN > DIV > BUTTON(.MOSTRAR/.OCULTAR) 		*/
 .mostrar {
 	display: visible;
 }
 
 .ocultar {
 	display: none;
+}
+
+/*		PARA POSICIONAR BIEN AL USAR EL ANCHOR TARGET 		*/
+:target::before {
+  content: "";
+  display: block;
+  height: 60px; /* fixed header height*/
+  margin: -60px 0 0; /* negative fixed header height */
 }
