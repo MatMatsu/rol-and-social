@@ -37,6 +37,13 @@
   border-top: 1px dashed black;
 }
 
+:target::before {
+  content: "";
+  display: block;
+  height: 60px; /* fixed header height*/
+  margin: -60px 0 0; /* negative fixed header height */
+}
+
 .lastManual {
 	margin-bottom: calc(15vw + 15vh);
 }
@@ -54,6 +61,10 @@
 .indice h2 {
 	font-weight: bold;
 	text-align: center;
+}
+
+.indice ul {
+	padding-left: calc(1vw + 1vh);
 }
 
 .indice ul li {

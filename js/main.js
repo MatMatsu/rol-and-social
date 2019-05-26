@@ -14,17 +14,11 @@ $(document).ready(function(){
 	$("#subir").click(function(){
 		var a = setInterval(function () {
 			$(window).scrollTop($(document).scrollTop()-100)
-			if ($(document).scrollTop() < 0) {
+			if ($(document).scrollTop() <= 0) {
 				clearInterval(a);
 			}
 		},30);	
 	});
-
-	/*	CREAR FUNCION PARA QUE EL ANCHOR EN AYUDA FUNCIONE BIEN 	*/
-	$(".indice>ul li a").on("click", function() {
-		//$(document).scrollTop($(document).scrollTop() + 1000);
-	});
-
 
 	/*	MOSTRAR Y OCUTAR COMENTARIOS EN INDEX.HTML 	*/
 	$(".verComentarios").click(function() {
