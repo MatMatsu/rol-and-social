@@ -1,26 +1,71 @@
+@media only screen and (max-width: 991px) {
+    main {
+        margin-top: calc(0.5vh + 0.5vw);
+    }
+    .menu-mobile {
+        display: block;
+    }
+    .left, .right {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+    main {
+        margin-top: calc(0.5vh + 0.5vw);
+    }
+    .menu-mobile {
+        display: none;
+    }
+}
+
+/*  BODY    */
 body {
     height: 100vh;
     font-size: calc(1.5vh + 1.5vw);
 }
 
+/*   HEADER     */
 header {
     margin-bottom: calc(1vh + 1vw);
 }
 
+/*   HEADER > DIV(.TIT)  */
 .tit{
     background-color: rgba(255,255,255,0.7);
-    padding: 1%;
+    padding: calc(0.1vh + 0.1vw) calc(1vh + 1vw) calc(0.25vh + 0.25vw);
     color: #5E2129;
 }
 
+/*   HEADER > DIV(.TIT) > H1     */
 .tit>h1 {
-    font-size: calc(4vh + 4vw);
+    font-size: calc(3vh + 3vw);
+    margin-top: calc(0.1vh + 0.1vw);
 }
 
+/*   HEADER > DIV(.TIT) > H1 > .FA-DICE-D20     */
+.fa-dice-d20 {
+    line-height: unset;
+}
+
+/*   HEADER > DIV(.TIT) > P  */
+.tit>p {
+    margin: calc(1vh + 1vw) 0 0;
+    font-size: calc(1vh + 1vw);
+}
+
+/*  MAIN > DIV > DIV(.ESPACIADO)    */
 .espaciado {
     justify-content: space-around;
 }
 
+/*  MAIN > DIV > DIV(.ESPACIADO) > DIV(.PERGA)    */
+.perga {
+    padding: 0;
+    height: 100%;
+}
+
+/*  MAIN > DIV > DIV(.ESPACIADO) > DIV(.PERGA) > IMG    */
 img {
     width: 100%;
     height: 100%;
@@ -28,59 +73,62 @@ img {
     z-index: -99;
 }
 
-.perga {
-    /*background-image: url(../img/Caratula___19.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding: 0;
-    background-color: red;*/
-    padding: 0;
-    height: 100%;
-}
-
+/*  MAIN > DIV > DIV(.ESPACIADO) > DIV(.PERGA) > H2    */
 h2{
-    font-size: calc(2vw + 2vh);
-    margin: calc(8vh + 8vw) auto calc(1vh + 1vw);
+    font-size: calc(1.5vw + 1.5vh);
+    margin: calc(4vh + 4vw) auto calc(1vh + 1vw);
 }
 
-.group-form{
-    margin: calc(1vh + 1vw) auto calc(2vh + 2vw);
+/*  MAIN > DIV > DIV(.ESPACIADO) > DIV(.PERGA) > P   */
+.perga>p {
+    font-size: calc(1vh + 1vw);
+    margin-bottom: 0;
 }
 
+/*  MAIN > DIV > DIV(.ESPACIADO) > DIV(.PERGA) > DIV > DIV > FORM > P    */
+form>p {
+    font-size: calc(1vh + 1vw);
+}
+
+/*  MAIN > DIV > DIV(.ESPACIADO) > DIV(.PERGA) > DIV > DIV > FORM > DIV(.GROUP-FORM)    */
+.form-group{
+    margin: 0 auto calc(0.5vh + 0.5vw);
+}
+
+/*  MAIN > DIV > DIV(.ESPACIADO) > DIV(.PERGA) > DIV > DIV > FORM > INPUT(.BUT)    */
+.but{
+    font-size: calc(1vh + 1vw);
+    margin: 0 auto calc(4vh + 4vw);
+    display: block;
+    /*margin-bottom: calc(7vh + 7vw);*/
+}
+
+/*  MAIN > DIV > DIV(.ESPACIADO) > DIV(.PERGA) > DIV > DIV > FORM > DIV(.FORM-INLINE)    */
 .form-inline{
     justify-content: center;
-    margin-bottom: calc(1vh + 1vw);
 }
 
-.but{
-    display: block;
-    margin: auto
+/*  MAIN > DIV > DIV(.ESPACIADO) > DIV(.PERGA) > DIV > DIV > FORM > DIV(.FORM-INLINE)/DIV(.GROUP-FORM) > LABEL    */
+.form-group>label, .form-inline>label {
+    font-size: calc(1vh + 1vw);
 }
 
+/*  MAIN > DIV > DIV(.ESPACIADO) > DIV(.PERGA) > DIV > DIV > FORM > DIV(.FORM-INLINE) > LABEL > INPUT(.CB)    */
 .cb{
-    /*margin-bottom: 1rem;
-    width: 1.7em;
-    height: 1.7em;*/
     margin-right: 3%;
     width: 2.5vh;
     height: 2.5vh;
 }
 
-input[type=button] {
-    margin-bottom: calc(7vh + 7vw);
-}
-
-.navbar {
-    background-color: rgba(255,255,255,0.7);
-}
-
+/*  FOOTER  */
 footer {
     bottom: 0;
     background-color: rgba(255,255,255,0.7);
-    padding: 0.1rem;
+    padding: calc(0.1vh + 0.1vw);
     margin-top: calc(1vh + 1vw);
 }
 
+/*  FOOTER > DIV > P  */
 footer>div>p {
     font-size: calc(1vh + 1vw);
     margin: 0;
