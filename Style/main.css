@@ -25,6 +25,11 @@ body{
     font-family: 'Aclonica', sans-serif;
 }
 
+.icono {
+    width: calc(1.5vh + 1.5vw);
+    height: calc(1.5vh + 1.5vw);
+}
+
 /*      NAV > DIV > UL > LI        */
 nav>div>ul>li {
     border-left: 1px solid #999;
