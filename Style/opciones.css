@@ -1,0 +1,23 @@
+.menupri div{
+
+background-image: url(../img/post-board.png);
+background-repeat: no-repeat;
+background-size:12rem;
+height: 12rem;
+width: 12rem;
+line-height: 8rem;
+text-align: center;
+}
+.container{
+    margin-top:7%;
+    
+}
+
+
+h2{
+    
+
+    background-color: rgba(215,215,215,0.5);
+    text-align: center;
+    width: 12rem;
+}
