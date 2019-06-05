@@ -26,8 +26,13 @@ body{
 }
 
 .icono {
-    width: calc(1.5vh + 1.5vw);
-    height: calc(1.5vh + 1.5vw);
+    width: calc(1vh + 1vw);
+    height: calc(1vh + 1vw);
+}
+
+.icono-titulo {
+    width: calc(5vh + 5vw);
+    height: calc(5vh + 5vw);
 }
 
 /*      NAV > DIV > UL > LI        */
